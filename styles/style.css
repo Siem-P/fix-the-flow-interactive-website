@@ -1,0 +1,14 @@
+:root {
+    --test-color: #FAC141;
+}
+
+
+html {
+    scroll-behavior: smooth scroll;
+}
+
+#checklist-container {
+    background-color: var(--test-color);
+    max-height: 50rem;
+    height: 10em;
+}
