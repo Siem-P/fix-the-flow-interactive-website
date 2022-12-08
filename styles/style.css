@@ -7,8 +7,18 @@ html {
     scroll-behavior: smooth scroll;
 }
 
-#checklist-container {
-    background-color: var(--test-color);
-    max-height: 50rem;
-    height: 10em;
+
+
+@media (max-width: 768px) {
+    .category-container {
+        background-color: var(--test-color);
+        /* height: 10em; */
+    }
+
+    .category-container {
+        display: inline-block;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
 }

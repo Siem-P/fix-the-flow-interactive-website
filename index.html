@@ -1,46 +1,113 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
 
     <title>Document</title>
-</head>
-<header>
-    <h1></h1>
-</header>
-<body>
-    <container id="checklist-container">
-        <h2>Checklist</h2>
-        
-        <!-- Section cat 1 -->
-        <section>
-            <div class="list-group">
-                <label class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value="">
-                  First checkbox
-                </label>
-                <label class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value="">
-                  Second checkbox
-                </label>
-                <label class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value="">
-                  Third checkbox
-                </label>
-                <label class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value="">
-                  Fourth checkbox
-                </label>
-                <label class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value="">
-                  Fifth checkbox
-                </label>
-              </div>
-        </section>
+  </head>
 
-    </container>
-</body>
+  <body>
+    <div class="category-container">
+      <h1>Checklist</h1>
+
+      <!-- Section cat 1 -->
+      <section class="card-container">
+        <!-- -------------- -->
+        <!-- Discutabel -->
+        <!-- -------------- -->
+        <div class="swipe-progress">Bolletjes</div>
+
+        <!-- Category Title -->
+        <h2>Waarneembaar</h2>
+        <span class="progress-bar"></span>
+        <span class="category-info">Hier bevindt zich info over Waarneembaar</span>
+
+        <!-- First Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <!-- Label -->
+            <label class="list-group-item">
+              First checkbox
+              <!-- Checkbox -->
+              <input class="checkbox-box" type="checkbox">
+              <h3 class="card-title">Eerste kaart</h3>
+              <p class="card-info"></p>
+              <!-- More info button -->
+              <button class="card-more-info" id="more-info-button">
+                Meer info
+              </button>
+            </label>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text"></p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of section 1 -->
+
+      <!-- Section cat 2 -->
+      <section class="card-container">
+        <!-- -------------- -->
+        <!-- Discutabel -->
+        <!-- -------------- -->
+        <div class="swipe-progress">Bolletjes</div>
+
+        <!-- Category Title -->
+        <h2>Bedienbaar</h2>
+        <span class="progress-bar"></span>
+        <span class="category-info">Hier bevindt zich info over Bedienbaar</span>
+
+        <!-- First Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <!-- Label -->
+            <label class="list-group-item">
+              First checkbox
+              <!-- Checkbox -->
+              <input class="checkbox-box" type="checkbox">
+              <h3 class="card-title">Eerste kaart</h3>
+              <p class="card-info"></p>
+              <!-- More info button -->
+              <button class="card-more-info" id="more-info-button">
+                Meer info
+              </button>
+            </label>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text"></p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text"></p>
+            </div>
+          </div>
+        </div>
+
+    
+      </section>
+    </div>
+    <!-- closing tag of container -->
+  </body>
 </html>
