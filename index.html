@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="styles/style.css" />
 
     <title>Document</title>
+    <script src="scripts/script.js" defer></script>
   </head>
 
-  
   <body>
-    <header> 
-      <img src="" alt="">
+    <header>
+      <img src="" alt="" />
     </header>
     <div class="category-container">
       <!-- <h1>Checklist</h1> -->
@@ -24,28 +24,27 @@
         <!-- -------------- -->
         <span class="swipe-progress">O o o o</span>
 
-        
         <!-- Category Title -->
         <h2>Waarneembaar</h2>
         <span class="progress-bar">---------</span>
-        <span class="category-info">Hier bevindt zich info over Waarneembaar</span>
+        <span class="category-info"
+          >Hier bevindt zich info over Waarneembaar</span
+        >
 
         <!-- First Card -->
         <div class="card-wrapper">
           <!-- Card Content (Checkbox, Title & Description) -->
           <div class="card-content">
-            <!-- Label -->
-            <label class="list-group-item">
-              First checkbox
+            <input class="checkbox-box" type="checkbox" />
+            <div class="card-inner-content-wrapper">
               <!-- Checkbox -->
-              <input class="checkbox-box" type="checkbox">
-              <h3 class="card-title">Eerste kaart</h3>
-              <p class="card-info"></p>
+              <h3 class="card-title">Ondertiteling</h3>
+              <p class="card-info">Filmpjes hebben een ondertiteling</p>
               <!-- More info button -->
-              <button class="card-more-info" id="more-info-button">
+              <button class="card-more-info-button" id="more-info-button">
                 Meer info
               </button>
-            </label>
+            </div>
           </div>
           <!-- Expandable Card Info -->
           <div class="card-extra-info">
@@ -54,11 +53,23 @@
               <!-- Card title -->
               <h4 class="card-extra-title">Uitleg</h4>
               <!-- Card extra paragrahp -->
-              <p class="card-extra-text"></p>
+              <p class="card-extra-text">
+                Ondertiteling met de gesproken tekst en andere geluiden zorgt
+                ervoor dat gebruikers met een auditieve beperking het filmpje
+                kunnen volgen. Bovendien is een videobestand pas doorzoekbaar
+                voor Google en andere zoekmachines als er audiodescriptie en
+                ondertiteling aan is toegevoegd.
+              </p>
             </div>
             <div class="card-tips">
               <h4 class="card-extra-title">Tips</h4>
-              <p class="card-extra-text"></p>
+              <p class="card-extra-text">
+                De ene mediaplayer biedt meer toegankelijkheidsopties dan de
+                andere. Kies voor multimediasoftware die is ingericht op
+                toegankelijkheid. Daarnaast is Scribit.pro een handig online
+                programma waarmee je video’s eenvoudig kunt voorzien van
+                ondertiteling, audiodescriptie en een tekstalternatief.
+              </p>
             </div>
           </div>
         </div>
@@ -70,29 +81,31 @@
         <!-- -------------- -->
         <!-- Discutabel -->
         <!-- -------------- -->
-        <div class="swipe-progress">o O o o</div>
+        <span class="swipe-progress">o O o o</span>
 
         <!-- Category Title -->
         <h2>Bedienbaar</h2>
         <span class="progress-bar">---------</span>
-        <span class="category-info">Hier bevindt zich info over Bedienbaar</span>
+        <span class="category-info"
+          >Hier bevindt zich info over Waarneembaar</span
+        >
 
         <!-- First Card -->
         <div class="card-wrapper">
           <!-- Card Content (Checkbox, Title & Description) -->
           <div class="card-content">
-            <!-- Label -->
-            <label class="list-group-item">
-              First checkbox
+            <input class="checkbox-box" type="checkbox" />
+            <div class="card-inner-content-wrapper">
               <!-- Checkbox -->
-              <input class="checkbox-box" type="checkbox">
-              <h3 class="card-title">Eerste kaart</h3>
-              <p class="card-info"></p>
+              <h3 class="card-title">Captcha's</h3>
+              <p class="card-info">
+                CAPTCHA’s zijn toegankelijk voor iedereen.
+              </p>
               <!-- More info button -->
-              <button class="card-more-info" id="more-info-button">
+              <button class="card-more-info-button" id="more-info-button">
                 Meer info
               </button>
-            </label>
+            </div>
           </div>
           <!-- Expandable Card Info -->
           <div class="card-extra-info">
@@ -101,17 +114,136 @@
               <!-- Card title -->
               <h4 class="card-extra-title">Uitleg</h4>
               <!-- Card extra paragrahp -->
-              <p class="card-extra-text"></p>
+              <p class="card-extra-text">
+                Een toegankelijke CAPTCHA moet op zijn minst beschikbaar zijn
+                als audiofragment welke je met het toetsenbord kan bereiken.
+              </p>
             </div>
             <div class="card-tips">
               <h4 class="card-extra-title">Tips</h4>
-              <p class="card-extra-text"></p>
+              <p class="card-extra-text">
+                Je kunt ook een vernieuwde CAPTCHA of andere controles
+                gebruiken.
+              </p>
             </div>
           </div>
         </div>
-
-    
       </section>
+
+      <!-- Section cat 3 -->
+      <section class="card-container">
+        <!-- -------------- -->
+        <!-- Discutabel -->
+        <!-- -------------- -->
+        <span class="swipe-progress">o o O o</span>
+
+        <!-- Category Title -->
+        <h2>Begrijpelijk</h2>
+        <span class="progress-bar">---------</span>
+        <span class="category-info">
+          Hier bevindt zich info over Waarneembaar
+        </span>
+
+        <!-- First Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <input class="checkbox-box" type="checkbox" />
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Taalniveau</h3>
+              <p class="card-info">Is de tekst in taalniveau B1 geschreven?</p>
+              <!-- More info button -->
+              <button class="card-more-info-button" id="more-info-button">
+                Meer info
+              </button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Taalniveau B1 staat voor eenvoudig Nederlands. Een tekst op
+                B1-niveau bestaat uit makkelijke woorden en uit korte,
+                eenvoudige en actieve zinnen.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Voor het schrijven van de teksten kan de redactie gebruik maken
+                van een taaltool. Deze tool met het gemiddelde taalniveau van
+                een tekst en geeft aan welke aanpassingen nodig zijn om het
+                gewenste niveau te bereiken.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of section 3 -->
+
+      <!-- Section cat 4 -->
+      <section class="card-container">
+        <!-- -------------- -->
+        <!-- Discutabel -->
+        <!-- -------------- -->
+        <span class="swipe-progress">o o o O</span>
+
+        <!-- Category Title -->
+        <h2>Robuust</h2>
+        <span class="progress-bar">---------</span>
+        <span class="category-info"> Hier bevindt zich info over Robuust </span>
+
+        <!-- First Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <input class="checkbox-box" type="checkbox" />
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Structuur</h3>
+              <p class="card-info">
+                Is de juiste structuur van de tekst aangegeven via de editor van
+                het CMS of in HTML-codes
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button" id="more-info-button">
+                Meer info
+              </button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Als een website “onder water” goed in elkaar zit, dan is de
+                basis voor toegankelijkheid gelegd. Ontwikkelaars kunnen in de
+                technische standaard WCAG 2.1 meer lezen over technieken die
+                gebruikt kunnen worden om aan de toegankelijkheidseisen te
+                voldoen.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Voor het bouwen van websites zijn internationale standaarden
+                ontwikkeld. Door de standaarden te volgen gebruik je de code op
+                de manier waarop deze bedoeld is. Hulptechnologieën sluiten aan
+                bij de ze standaarden.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of section 3 -->
     </div>
     <!-- closing tag of container -->
   </body>

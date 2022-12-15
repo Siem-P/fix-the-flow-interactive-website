@@ -1,90 +1,134 @@
 :root {
-    --background-color: #e4e68e;
-    --section-1-background-color: lightblue;
-    --section-2-background-color: lightgreen;
-    --section-3-background-color: salmon;
-    --section-4-background-color: hotpink;
-    --h2-magenta: #b9005f;
+  --background-color: #e4e68e;
+  --card-content-background: #eeeeee;
+  --section-1-background-color: lightblue;
+  --section-2-background-color: lightgreen;
+  --section-3-background-color: salmon;
+  --section-4-background-color: hotpink;
+  --h2-magenta: #b9005f;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth scroll;
+  scroll-behavior: smooth scroll;
 }
 
-
-
 @media (max-width: 768px) {
-    body { 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    h2 {
-        color: var(--h2-magenta);
-    }
+  h2 {
+    color: var(--h2-magenta);
+  }
 
+  .category-container {
+    display: flex;
+    background-color: var(--background-color);
+    min-height: 30em;
+    margin: 0 auto;
+    padding: 1em;
+  }
+
+  .category-container {
+    overflow-y: hidden;
+    gap: 1em;
+  }
+
+  section:nth-of-type(1) {
+    background-color: var(--section-1-background-color);
+  }
+  section:nth-of-type(2) {
+    background-color: var(--section-2-background-color);
+  }
+  section:nth-of-type(3) {
+    background-color: var(--section-3-background-color);
+  }
+  section:nth-of-type(4) {
+    background-color: var(--section-4-background-color);
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    min-width: calc(100vw - 1rem - 1rem);
+    padding: 1rem 1rem;
+  }
+
+  .swipe-progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .progress-bar {
+    margin: 0 auto;
+  }
+
+  h2 {
+    padding: 0.3rem 1rem;
+  }
+
+  .card-wrapper {
+    margin-top: 1rem;
+    background-color: var(--card-content-background);
+    border-radius: 0.4rem;
+    width: 100%;
+    padding: 1em;
+    height: auto;
+  }
+
+  .card-content {
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  /* Child element van het card-content element */
+  .card-inner-content-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 0 0.4rem;
+  }
+
+  /* Button van de cards */
+  .card-more-info-button {
+    border-radius: 0.4rem;
+    padding: 0.2rem 0.3rem;
+    position: absolute;
+    height: 1.5rem;
+    top: -0.5rem;
+    /* bottom: 0; */
+    right: 0;
+    /* justify-content: end; */
+  }
+
+ 
+
+  /*  */
+  .card-extra-info {
+    margin: 1rem 0;
+    display: none;
+    flex-direction: column;
+    row-gap: 1rem;
+    transition: .2s ease;
+  }
+
+   /* H4 titel van de cards */
+  .card-extra-title {
+    margin-bottom: 0.5rem;
     
-    .category-container {
-        display: flex;
-        background-color: var(--background-color);
-        /* height: 10em; */
-        margin: 0 auto;
-        padding: 1em;
-    }
+  }
 
-    .category-container {
-        overflow-y: auto;
-        gap: 1em;
-        
-    }
-
-    
-    section:nth-of-type(1) {
-        background-color: var(--section-1-background-color);
-    }
-    section:nth-of-type(2) {
-        background-color: var(--section-2-background-color);
-    }
-    section:nth-of-type(3) {
-        background-color: var(--section-3-background-color);
-    }
-    section:nth-of-type(4) {
-        background-color: var(--section-4-background-color);
-    }
-    
-    .card-container {
-        display: flex;
-        flex-direction: column;
-        min-width: calc(100vw - 1rem - 1rem);
-        padding: 1rem 2rem;
-    }
-
-    .swipe-progress {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 1rem;
-    }
-    .progress-bar {
-        margin: auto;
-        
-    }
-
-    h2 {
-        padding: 0.3rem 1rem;
-    }
-
-    .card-wrapper {
-        /* background-color: aqua; */
-    }
-
-
-
+  .hideCard {
+    /* visibility: hidden; */
+    display: flex;
+  }
 }
