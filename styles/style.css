@@ -1,11 +1,15 @@
 :root {
-  --background-color: #e4e68e;
+  --test-color: #e4e68e;
   --card-content-background: #eeeeee;
-  --section-1-background-color: lightblue;
-  --section-2-background-color: lightgreen;
-  --section-3-background-color: salmon;
-  --section-4-background-color: hotpink;
+  --lightblue: lightblue;
+  --lightgreen: lightgreen;
   --h2-magenta: #b9005f;
+  --gradient-magenta: linear-gradient(to right, #b9005f, #e30059);
+  --groen: #25ae93;
+  --blauw: #606eb3;
+  --grijs: #f3f3f3;
+  --wit: #fff;
+  --geel: #ffd05f;
 }
 
 * {
@@ -31,7 +35,7 @@ html {
 
   .category-container {
     display: flex;
-    background-color: var(--background-color);
+    background-color: var(--test-color);
     min-height: 30em;
     margin: 0 auto;
     padding: 1em;
@@ -43,16 +47,16 @@ html {
   }
 
   section:nth-of-type(1) {
-    background-color: var(--section-1-background-color);
+    background-color: var(--blauw);
   }
   section:nth-of-type(2) {
-    background-color: var(--section-2-background-color);
+    background-color: var(--groen);
   }
   section:nth-of-type(3) {
-    background-color: var(--section-3-background-color);
+    background-color: var(--geel);
   }
   section:nth-of-type(4) {
-    background-color: var(--section-4-background-color);
+    background-color: var(--lightgreen);
   }
 
   .card-container {
@@ -113,21 +117,17 @@ html {
     right: 0;
   }
 
- 
-
-  
   .card-extra-info {
     margin: 1rem 0;
     display: none;
     flex-direction: column;
     row-gap: 1rem;
-    transition: .2s ease;
+    transition: 0.2s ease;
   }
 
-   /* H4 titel van de cards */
+  /* H4 titel van de cards */
   .card-extra-title {
     margin-bottom: 0.5rem;
-    
   }
 
   .hideCard {
