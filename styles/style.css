@@ -83,10 +83,12 @@ html {
     width: 100%;
     padding: 1em;
     height: auto;
+    min-height: 6rem;
   }
 
   .card-content {
     display: flex;
+    align-items: center;
     width: 100%;
     gap: 0.5rem;
   }
@@ -100,19 +102,20 @@ html {
 
   /* Button van de cards */
   .card-more-info-button {
+    /* display: flex; */
+    position: relative;
     border-radius: 0.4rem;
     padding: 0.2rem 0.3rem;
-    position: absolute;
+    /* position: absolute; */
     height: 1.5rem;
-    top: -0.5rem;
-    /* bottom: 0; */
+    /* top: 0; */
+    bottom: -0.5rem;
     right: 0;
-    /* justify-content: end; */
   }
 
  
 
-  /*  */
+  
   .card-extra-info {
     margin: 1rem 0;
     display: none;
