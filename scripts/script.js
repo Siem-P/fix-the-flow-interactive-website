@@ -11,7 +11,7 @@ meerInfoKnoppen.forEach((meerInfoKnop) => {
     meerInfoKnop.addEventListener('click',  function() {
         let parentElement = this.closest('.card-wrapper');
         let targetElement = parentElement.querySelector('.card-extra-info');
-        let btnElement = parentElement.querySelector('#more-info-button');
+        let btnElement = parentElement.querySelector('.card-more-info-button');
 
         targetElement.classList.toggle('hideCard');
 
