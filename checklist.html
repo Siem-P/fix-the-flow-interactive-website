@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="nl">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/mobile.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
 
     <title>Document</title>
     <script src="scripts/script.js" defer></script>
@@ -13,17 +13,48 @@
 
   <body>
     <header>
-      <!-- <img src="" alt=""> -->
+      <img
+        src="./assets/images/logo.png"
+        alt="Logo Vervoerregio Amsterdam"
+        id="logo"
+      />
+      <div id="after-curve"></div>
+      <div class="topnav">
+        <!-- <label class="menu-label" for="menu-btn">
+          Menu
+            <button class="menu-toggle" id="menu-btn">
+                <i id="menu-icon" class="fa fa-bars"></i>
+            </button>
+        </label> -->
+        <!-- <form>
+          <input type="search" placeholder="Zoek hier!">
+        </form> -->
+        <nav id="primaire-nav" class="primaire-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="richtlijnen.html">Checklist</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <div class="category-container">
-      <!-- <h1>Checklist</h1> -->
 
+    <article class="zero-state">
+      <h1>Vul de checklist</h1>
+      <p>Maak websites toegankelijker</p>
+    </article>
+
+    <div class="category-container">
+      <div class="swipe-indicator">
+        <span class="swipe-indicator-item"></span>
+        <span class="swipe-indicator-item"></span>
+        <span class="swipe-indicator-item"></span>
+        <span class="swipe-indicator-item"></span>
+      </div>
       <!-- Section cat 1 -->
       <section class="card-container">
         <!------------------>
         <!-- Discutabel -->
         <!------------------>
-        <span class="swipe-progress">O o o o</span>
 
         <!-- Category Title -->
         <h2>Waarneembaar</h2>
@@ -37,16 +68,14 @@
           <!-- Card Content (Checkbox, Title & Description) -->
           <div class="card-content">
             <form class="">
-              <input class="checkbox-box" type="checkbox">
+              <input class="checkbox-box" type="checkbox" />
             </form>
             <div class="card-inner-content-wrapper">
               <!-- Checkbox -->
               <h3 class="card-title">Ondertiteling</h3>
               <p class="card-info">Filmpjes hebben een ondertiteling</p>
               <!-- More info button -->
-              <button class="card-more-info-button" >
-                Meer info
-              </button>
+              <button class="card-more-info-button">Meer info</button>
             </div>
           </div>
           <!-- Expandable Card Info -->
@@ -76,6 +105,251 @@
             </div>
           </div>
         </div>
+
+        <!-- Second Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Audiobeschrijving</h3>
+              <p class="card-info">Filmpjes hebben een audiobeschrijving</p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                In een audiobeschrijving vertelt een stem belangrijke visuele
+                details die je niet kunt afleiden uit dat wat te horen is. Dat
+                kan bijvoorbeeld gaan om handelingen, personages en scène
+                veranderingen, maar ook om tekst die op het scherm te zien is.
+                De audiobeschrijving is dus een aanvulling op wat al te horen
+                is. De stem van de audiobeschrijving vertelt op de momenten dat
+                er pauzes zijn in het filmpje.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Als alle belangrijke visuele details ook af te leiden zijn uit
+                het geluid is een audiobeschrijving niet verplicht. Bovendien
+                kun je allen alleen een audiobeschrijving toevoegen als de
+                audiotrack van de video zelf voldoende ‘rustmomenten’ heeft. De
+                audiobeschrijving mag immers alleen tijdens die rustmomenten te
+                horen zijn, omdat er anders twee stemmen door elkaar klinken.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Hints</h3>
+              <p class="card-info">
+                Fouten bestaan niet alleen uit visuele aanwijzingen
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Door één aanwijzing te gebruiken is de kans groot dat hiermee
+                bepaalde gebruikers uitgesloten worden. Gebruik altijd meerdere
+                aanwijzingen.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Gebruik niet alleen aanwijzingen uit hetzelfde spectrum
+                (visueel, auditief), maar combineer aanwijzingen uit
+                verschillende spectrums.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fourth Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Voorlezen</h3>
+              <p class="card-info">
+                De inhoud kan worden voorgelezen door een toepassing op de
+                site/app
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Wanneer het niet duidelijk is welk ingevuld veld foutief is
+                ingevuld kunnen gebruikers vastlopen.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Verrijk de foutmelding met een concreet invulvoorbeeld.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fifth Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Suggesties</h3>
+              <p class="card-info">
+                Fouten zijn duidelijk aangegeven en er is, als dat kan, een
+                suggestie voor verbetering
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Voor het voorlezen hoeft geen speciale screenreader gebruikt te
+                worden.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Geef duidelijk aan waar gebruikers de inhoud kunnen laten
+                voorlezen.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sixth Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Tekst uitvergroten</h3>
+              <p class="card-info">
+                De inhoud kan worden uitvergroot tot 200% zonder dat er inhoud
+                uit het zicht verwdijnt
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Door de teksten eenvoudig te vergroten kunnen mensen met een
+                visuele beperking de inhoud beter waarnemen.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Geef duidelijk aan waar de gebruikers de tekstgrootte kunnen
+                aanpassen.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seventh Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Tekstgrootte</h3>
+              <p class="card-info">
+                Gebruikers kunnen de tekstgrootte aanpassen
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Door de teksten eenvoudig te vergroten kunnen mensen met een
+                visuele beperking de inhoud beter waarnemen.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Geef duidelijk aan waar de gebruikers de tekstgrootte kunnen
+                aanpassen.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- End of section 1 -->
 
@@ -84,20 +358,19 @@
         <!------------------>
         <!-- Discutabel -->
         <!------------------>
-        <span class="swipe-progress">o O o o</span>
 
         <!-- Category Title -->
         <h2>Bedienbaar</h2>
         <span class="progress-bar">---------</span>
         <span class="category-info">
-          Hier bevindt zich info over Waarneembaar 
+          Hier bevindt zich info over Waarneembaar
         </span>
 
         <!-- First Card -->
         <div class="card-wrapper">
           <!-- Card Content (Checkbox, Title & Description) -->
           <div class="card-content">
-            <input class="checkbox-box" type="checkbox">
+            <input class="checkbox-box" type="checkbox" />
             <div class="card-inner-content-wrapper">
               <!-- Checkbox -->
               <h3 class="card-title">Captcha's</h3>
@@ -105,9 +378,7 @@
                 CAPTCHA’s zijn toegankelijk voor iedereen.
               </p>
               <!-- More info button -->
-              <button class="card-more-info-button" >
-                Meer info
-              </button>
+              <button class="card-more-info-button">Meer info</button>
             </div>
           </div>
           <!-- Expandable Card Info -->
@@ -138,7 +409,6 @@
         <!------------------>
         <!-- Discutabel -->
         <!------------------>
-        <span class="swipe-progress">o o O o</span>
 
         <!-- Category Title -->
         <h2>Begrijpelijk</h2>
@@ -152,16 +422,14 @@
           <!-- Card Content (Checkbox, Title & Description) -->
           <div class="card-content">
             <form class="">
-              <input class="checkbox-box" type="checkbox">
+              <input class="checkbox-box" type="checkbox" />
             </form>
             <div class="card-inner-content-wrapper">
               <!-- Checkbox -->
               <h3 class="card-title">Taalniveau</h3>
               <p class="card-info">Is de tekst in taalniveau B1 geschreven?</p>
               <!-- More info button -->
-              <button class="card-more-info-button" >
-                Meer info
-              </button>
+              <button class="card-more-info-button">Meer info</button>
             </div>
           </div>
           <!-- Expandable Card Info -->
@@ -196,7 +464,6 @@
         <!------------------>
         <!-- Discutabel -->
         <!------------------>
-        <span class="swipe-progress">o o o O</span>
 
         <!-- Category Title -->
         <h2>Robuust</h2>
@@ -208,7 +475,7 @@
           <!-- Card Content (Checkbox, Title & Description) -->
           <div class="card-content">
             <form class="">
-              <input class="checkbox-box" type="checkbox">
+              <input class="checkbox-box" type="checkbox" />
             </form>
             <div class="card-inner-content-wrapper">
               <!-- Checkbox -->
@@ -218,9 +485,7 @@
                 het CMS of in HTML-codes
               </p>
               <!-- More info button -->
-              <button class="card-more-info-button">
-                Meer info
-              </button>
+              <button class="card-more-info-button">Meer info</button>
             </div>
           </div>
           <!-- Expandable Card Info -->
