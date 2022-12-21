@@ -1,722 +1,1300 @@
 <!DOCTYPE html>
 <html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/style.css" />
-  <link rel="stylesheet" href="./styles/mobile.css" />
+    <title>Document</title>
+    <script src="scripts/script.js" defer></script>
+  </head>
 
-  <title>Document</title>
-  <script src="scripts/script.js" defer></script>
-</head>
-
-<body>
-  <header>
-    <img src="./assets/images/logo.png" alt="Logo Vervoerregio Amsterdam" id="logo" />
-    <div id="after-curve"></div>
-    <div class="topnav">
-      <!-- <label class="menu-label" for="menu-btn">
+  <body>
+    <header>
+      <img
+        src="./assets/images/logo.png"
+        alt="Logo Vervoerregio Amsterdam"
+        id="logo"
+      />
+      <div id="after-curve"></div>
+      <div class="topnav">
+        <!-- <label class="menu-label" for="menu-btn">
           Menu
             <button class="menu-toggle" id="menu-btn">
                 <i id="menu-icon" class="fa fa-bars"></i>
             </button>
         </label> -->
-      <!-- <form>
+        <!-- <form>
           <input type="search" placeholder="Zoek hier!">
         </form> -->
-      <nav id="primaire-nav" class="primaire-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="richtlijnen.html">Checklist</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <article class="zero-state">
-    <h1>Vul de checklist in</h1>
-    <p>Maak uw website toegankelijker</p>
-  </article>
-
-  <div class="category-container">
-    <div class="swipe-indicator">
-      <span class="swipe-indicator-item"></span>
-      <span class="swipe-indicator-item"></span>
-      <span class="swipe-indicator-item"></span>
-      <span class="swipe-indicator-item"></span>
-    </div>
-    <!-- Section cat 1 -->
-    <section class="card-container">
-      <!------------------>
-      <!-- Discutabel -->
-      <!------------------>
-
-      <!-- Category Title -->
-      <h2>Waarneembaar</h2>
-      <span class="progress-bar">---------</span>
-      <span class="category-info">Hier bevindt zich info over Waarneembaar</span>
-
-      <!-- First Card -->
-      <div class="card-wrapper">
-        <!-- Card Content (Checkbox, Title & Description) -->
-        <div class="card-content">
-          <form class="">
-            <input class="checkbox-box" type="checkbox" />
-          </form>
-          <div class="card-inner-content-wrapper">
-            <!-- Checkbox -->
-            <h3 class="card-title">Ondertiteling</h3>
-            <p class="card-info">Filmpjes hebben een ondertiteling</p>
-            <!-- More info button -->
-            <button class="card-more-info-button">Meer info</button>
-          </div>
-        </div>
-        <!-- Expandable Card Info -->
-        <div class="card-extra-info">
-          <!-- Card description -->
-          <div class="rl-card-uitleg">
-            <!-- Card title -->
-            <h4 class="card-extra-title">Uitleg</h4>
-            <!-- Card extra paragrahp -->
-            <p class="card-extra-text">
-              Ondertiteling met de gesproken tekst en andere geluiden zorgt
-              ervoor dat gebruikers met een auditieve beperking het filmpje
-              kunnen volgen. Bovendien is een videobestand pas doorzoekbaar
-              voor Google en andere zoekmachines als er audiodescriptie en
-              ondertiteling aan is toegevoegd.
-            </p>
-          </div>
-          <div class="card-tips">
-            <h4 class="card-extra-title">Tips</h4>
-            <p class="card-extra-text">
-              De ene mediaplayer biedt meer toegankelijkheidsopties dan de
-              andere. Kies voor multimediasoftware die is ingericht op
-              toegankelijkheid. Daarnaast is Scribit.pro een handig online
-              programma waarmee je video’s eenvoudig kunt voorzien van
-              ondertiteling, audiodescriptie en een tekstalternatief.
-            </p>
-          </div>
-        </div>
+        <nav id="primaire-nav" class="primaire-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="richtlijnen.html">Checklist</a></li>
+          </ul>
+        </nav>
       </div>
+    </header>
 
-      <!-- Second Card -->
-      <div class="card-wrapper">
-        <!-- Card Content (Checkbox, Title & Description) -->
-        <div class="card-content">
-          <form class="">
-            <input class="checkbox-box" type="checkbox" />
-          </form>
-          <div class="card-inner-content-wrapper">
-            <!-- Checkbox -->
-            <h3 class="card-title">Audiobeschrijving</h3>
-            <p class="card-info">Filmpjes hebben een audiobeschrijving</p>
-            <!-- More info button -->
-            <button class="card-more-info-button">Meer info</button>
-          </div>
-        </div>
-        <!-- Expandable Card Info -->
-        <div class="card-extra-info">
-          <!-- Card description -->
-          <div class="rl-card-uitleg">
-            <!-- Card title -->
-            <h4 class="card-extra-title">Uitleg</h4>
-            <!-- Card extra paragrahp -->
-            <p class="card-extra-text">
-              In een audiobeschrijving vertelt een stem belangrijke visuele
-              details die je niet kunt afleiden uit dat wat te horen is. Dat
-              kan bijvoorbeeld gaan om handelingen, personages en scène
-              veranderingen, maar ook om tekst die op het scherm te zien is.
-              De audiobeschrijving is dus een aanvulling op wat al te horen
-              is. De stem van de audiobeschrijving vertelt op de momenten dat
-              er pauzes zijn in het filmpje.
-            </p>
-          </div>
-          <div class="card-tips">
-            <h4 class="card-extra-title">Tips</h4>
-            <p class="card-extra-text">
-              Als alle belangrijke visuele details ook af te leiden zijn uit
-              het geluid is een audiobeschrijving niet verplicht. Bovendien
-              kun je allen alleen een audiobeschrijving toevoegen als de
-              audiotrack van de video zelf voldoende ‘rustmomenten’ heeft. De
-              audiobeschrijving mag immers alleen tijdens die rustmomenten te
-              horen zijn, omdat er anders twee stemmen door elkaar klinken.
-            </p>
-          </div>
-        </div>
+    <article class="zero-state">
+      <h1>Vul de checklist in</h1>
+      <p>Maak uw website toegankelijker</p>
+    </article>
+
+    <div class="category-container">
+      <div class="swipe-indicator">
+        <span class="swipe-indicator-item"></span>
+        <span class="swipe-indicator-item"></span>
+        <span class="swipe-indicator-item"></span>
+        <span class="swipe-indicator-item"></span>
       </div>
+      <!-- Section cat 1 -->
+      <section class="card-container">
+        <!------------------>
+        <!-- Discutabel -->
+        <!------------------>
 
-      <!-- Third Card -->
-      <div class="card-wrapper">
-        <!-- Card Content (Checkbox, Title & Description) -->
-        <div class="card-content">
-          <form class="">
+        <!-- Category Title -->
+        <h2>Waarneembaar</h2>
+        <span class="progress-bar">---------</span>
+        <span class="category-info"
+          >Hier bevindt zich info over Waarneembaar</span
+        >
+
+        <!-- First Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Ondertiteling</h3>
+              <p class="card-info">Filmpjes hebben een ondertiteling</p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Ondertiteling met de gesproken tekst en andere geluiden zorgt
+                ervoor dat gebruikers met een auditieve beperking het filmpje
+                kunnen volgen. Bovendien is een videobestand pas doorzoekbaar
+                voor Google en andere zoekmachines als er audiodescriptie en
+                ondertiteling aan is toegevoegd.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                De ene mediaplayer biedt meer toegankelijkheidsopties dan de
+                andere. Kies voor multimediasoftware die is ingericht op
+                toegankelijkheid. Daarnaast is Scribit.pro een handig online
+                programma waarmee je video’s eenvoudig kunt voorzien van
+                ondertiteling, audiodescriptie en een tekstalternatief.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Audiobeschrijving</h3>
+              <p class="card-info">Filmpjes hebben een audiobeschrijving</p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                In een audiobeschrijving vertelt een stem belangrijke visuele
+                details die je niet kunt afleiden uit dat wat te horen is. Dat
+                kan bijvoorbeeld gaan om handelingen, personages en scène
+                veranderingen, maar ook om tekst die op het scherm te zien is.
+                De audiobeschrijving is dus een aanvulling op wat al te horen
+                is. De stem van de audiobeschrijving vertelt op de momenten dat
+                er pauzes zijn in het filmpje.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Als alle belangrijke visuele details ook af te leiden zijn uit
+                het geluid is een audiobeschrijving niet verplicht. Bovendien
+                kun je allen alleen een audiobeschrijving toevoegen als de
+                audiotrack van de video zelf voldoende ‘rustmomenten’ heeft. De
+                audiobeschrijving mag immers alleen tijdens die rustmomenten te
+                horen zijn, omdat er anders twee stemmen door elkaar klinken.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Hints</h3>
+              <p class="card-info">
+                Fouten bestaan niet alleen uit visuele aanwijzingen
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Door één aanwijzing te gebruiken is de kans groot dat hiermee
+                bepaalde gebruikers uitgesloten worden. Gebruik altijd meerdere
+                aanwijzingen.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Gebruik niet alleen aanwijzingen uit hetzelfde spectrum
+                (visueel, auditief), maar combineer aanwijzingen uit
+                verschillende spectrums.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fourth Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Voorlezen</h3>
+              <p class="card-info">
+                De inhoud kan worden voorgelezen door een toepassing op de
+                site/app
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Wanneer het niet duidelijk is welk ingevuld veld foutief is
+                ingevuld kunnen gebruikers vastlopen.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Verrijk de foutmelding met een concreet invulvoorbeeld.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fifth Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Suggesties</h3>
+              <p class="card-info">
+                Fouten zijn duidelijk aangegeven en er is, als dat kan, een
+                suggestie voor verbetering
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Voor het voorlezen hoeft geen speciale screenreader gebruikt te
+                worden.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Geef duidelijk aan waar gebruikers de inhoud kunnen laten
+                voorlezen.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sixth Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Tekst uitvergroten</h3>
+              <p class="card-info">
+                De inhoud kan worden uitvergroot tot 200% zonder dat er inhoud
+                uit het zicht verwdijnt
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Door de teksten eenvoudig te vergroten kunnen mensen met een
+                visuele beperking de inhoud beter waarnemen.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Geef duidelijk aan waar de gebruikers de tekstgrootte kunnen
+                aanpassen.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seventh Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Tekstgrootte</h3>
+              <p class="card-info">
+                Gebruikers kunnen de tekstgrootte aanpassen
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Door de teksten eenvoudig te vergroten kunnen mensen met een
+                visuele beperking de inhoud beter waarnemen.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Geef duidelijk aan waar de gebruikers de tekstgrootte kunnen
+                aanpassen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of section 1 -->
+
+      <!-- Section cat 2 -->
+      <section class="card-container">
+        <!------------------>
+        <!-- Discutabel -->
+        <!------------------>
+
+        <!-- Category Title -->
+        <h2>Bedienbaar</h2>
+        <span class="progress-bar">---------</span>
+        <span class="category-info">
+          Hier bevindt zich info over Bedienbaar
+        </span>
+
+        <!-- First Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
             <input class="checkbox-box" type="checkbox" />
-          </form>
-          <div class="card-inner-content-wrapper">
-            <!-- Checkbox -->
-            <h3 class="card-title">Hints</h3>
-            <p class="card-info">
-              Fouten bestaan niet alleen uit visuele aanwijzingen
-            </p>
-            <!-- More info button -->
-            <button class="card-more-info-button">Meer info</button>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Captcha's</h3>
+              <p class="card-info">
+                CAPTCHA’s zijn toegankelijk voor iedereen.
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Een toegankelijke CAPTCHA moet op zijn minst beschikbaar zijn
+                als audiofragment welke je met het toetsenbord kan bereiken.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Je kunt ook een vernieuwde CAPTCHA of andere controles
+                gebruiken.
+              </p>
+            </div>
           </div>
         </div>
-        <!-- Expandable Card Info -->
-        <div class="card-extra-info">
-          <!-- Card description -->
-          <div class="rl-card-uitleg">
-            <!-- Card title -->
-            <h4 class="card-extra-title">Uitleg</h4>
-            <!-- Card extra paragrahp -->
-            <p class="card-extra-text">
-              Door één aanwijzing te gebruiken is de kans groot dat hiermee
-              bepaalde gebruikers uitgesloten worden. Gebruik altijd meerdere
-              aanwijzingen.
-            </p>
-          </div>
-          <div class="card-tips">
-            <h4 class="card-extra-title">Tips</h4>
-            <p class="card-extra-text">
-              Gebruik niet alleen aanwijzingen uit hetzelfde spectrum
-              (visueel, auditief), maar combineer aanwijzingen uit
-              verschillende spectrums.
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <!-- Fourth Card -->
-      <div class="card-wrapper">
-        <!-- Card Content (Checkbox, Title & Description) -->
-        <div class="card-content">
-          <form class="">
-            <input class="checkbox-box" type="checkbox" />
-          </form>
-          <div class="card-inner-content-wrapper">
-            <!-- Checkbox -->
-            <h3 class="card-title">Voorlezen</h3>
-            <p class="card-info">
-              De inhoud kan worden voorgelezen door een toepassing op de
-              site/app
-            </p>
-            <!-- More info button -->
-            <button class="card-more-info-button">Meer info</button>
+        <!-- Second Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Bewegend beeld/geluid</h3>
+              <p class="card-info">
+                Bewegend beeld en geluid dat automatisch start kan uitgezet
+                worden of stopt binnen 3 seconden.
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
           </div>
-        </div>
-        <!-- Expandable Card Info -->
-        <div class="card-extra-info">
-          <!-- Card description -->
-          <div class="rl-card-uitleg">
-            <!-- Card title -->
-            <h4 class="card-extra-title">Uitleg</h4>
-            <!-- Card extra paragrahp -->
-            <p class="card-extra-text">
-              Wanneer het niet duidelijk is welk ingevuld veld foutief is
-              ingevuld kunnen gebruikers vastlopen.
-            </p>
-          </div>
-          <div class="card-tips">
-            <h4 class="card-extra-title">Tips</h4>
-            <p class="card-extra-text">
-              Verrijk de foutmelding met een concreet invulvoorbeeld.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Fifth Card -->
-      <div class="card-wrapper">
-        <!-- Card Content (Checkbox, Title & Description) -->
-        <div class="card-content">
-          <form class="">
-            <input class="checkbox-box" type="checkbox" />
-          </form>
-          <div class="card-inner-content-wrapper">
-            <!-- Checkbox -->
-            <h3 class="card-title">Suggesties</h3>
-            <p class="card-info">
-              Fouten zijn duidelijk aangegeven en er is, als dat kan, een
-              suggestie voor verbetering
-            </p>
-            <!-- More info button -->
-            <button class="card-more-info-button">Meer info</button>
-          </div>
-        </div>
-        <!-- Expandable Card Info -->
-        <div class="card-extra-info">
-          <!-- Card description -->
-          <div class="rl-card-uitleg">
-            <!-- Card title -->
-            <h4 class="card-extra-title">Uitleg</h4>
-            <!-- Card extra paragrahp -->
-            <p class="card-extra-text">
-              Voor het voorlezen hoeft geen speciale screenreader gebruikt te
-              worden.
-            </p>
-          </div>
-          <div class="card-tips">
-            <h4 class="card-extra-title">Tips</h4>
-            <p class="card-extra-text">
-              Geef duidelijk aan waar gebruikers de inhoud kunnen laten
-              voorlezen.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Sixth Card -->
-      <div class="card-wrapper">
-        <!-- Card Content (Checkbox, Title & Description) -->
-        <div class="card-content">
-          <form class="">
-            <input class="checkbox-box" type="checkbox" />
-          </form>
-          <div class="card-inner-content-wrapper">
-            <!-- Checkbox -->
-            <h3 class="card-title">Tekst uitvergroten</h3>
-            <p class="card-info">
-              De inhoud kan worden uitvergroot tot 200% zonder dat er inhoud
-              uit het zicht verwdijnt
-            </p>
-            <!-- More info button -->
-            <button class="card-more-info-button">Meer info</button>
-          </div>
-        </div>
-        <!-- Expandable Card Info -->
-        <div class="card-extra-info">
-          <!-- Card description -->
-          <div class="rl-card-uitleg">
-            <!-- Card title -->
-            <h4 class="card-extra-title">Uitleg</h4>
-            <!-- Card extra paragrahp -->
-            <p class="card-extra-text">
-              Door de teksten eenvoudig te vergroten kunnen mensen met een
-              visuele beperking de inhoud beter waarnemen.
-            </p>
-          </div>
-          <div class="card-tips">
-            <h4 class="card-extra-title">Tips</h4>
-            <p class="card-extra-text">
-              Geef duidelijk aan waar de gebruikers de tekstgrootte kunnen
-              aanpassen.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Seventh Card -->
-      <div class="card-wrapper">
-        <!-- Card Content (Checkbox, Title & Description) -->
-        <div class="card-content">
-          <form class="">
-            <input class="checkbox-box" type="checkbox" />
-          </form>
-          <div class="card-inner-content-wrapper">
-            <!-- Checkbox -->
-            <h3 class="card-title">Tekstgrootte</h3>
-            <p class="card-info">
-              Gebruikers kunnen de tekstgrootte aanpassen
-            </p>
-            <!-- More info button -->
-            <button class="card-more-info-button">Meer info</button>
-          </div>
-        </div>
-        <!-- Expandable Card Info -->
-        <div class="card-extra-info">
-          <!-- Card description -->
-          <div class="rl-card-uitleg">
-            <!-- Card title -->
-            <h4 class="card-extra-title">Uitleg</h4>
-            <!-- Card extra paragrahp -->
-            <p class="card-extra-text">
-              Door de teksten eenvoudig te vergroten kunnen mensen met een
-              visuele beperking de inhoud beter waarnemen.
-            </p>
-          </div>
-          <div class="card-tips">
-            <h4 class="card-extra-title">Tips</h4>
-            <p class="card-extra-text">
-              Geef duidelijk aan waar de gebruikers de tekstgrootte kunnen
-              aanpassen.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End of section 1 -->
-
-    <!-- Section cat 2 -->
-    <section class="card-container">
-      <!------------------>
-      <!-- Discutabel -->
-      <!------------------>
-
-      <!-- Category Title -->
-      <h2>Bedienbaar</h2>
-      <span class="progress-bar">---------</span>
-      <span class="category-info">
-        Hier bevindt zich info over Waarneembaar
-      </span>
-
-      <!-- First Card -->
-      <div class="card-wrapper">
-        <!-- Card Content (Checkbox, Title & Description) -->
-        <div class="card-content">
-          <input class="checkbox-box" type="checkbox" />
-          <div class="card-inner-content-wrapper">
-            <!-- Checkbox -->
-            <h3 class="card-title">Captcha's</h3>
-            <p class="card-info">
-              CAPTCHA’s zijn toegankelijk voor iedereen.
-            </p>
-            <!-- More info button -->
-            <button class="card-more-info-button">Meer info</button>
-          </div>
-        </div>
-        <!-- Expandable Card Info -->
-        <div class="card-extra-info">
-          <!-- Card description -->
-          <div class="rl-card-uitleg">
-            <!-- Card title -->
-            <h4 class="card-extra-title">Uitleg</h4>
-            <!-- Card extra paragrahp -->
-            <p class="card-extra-text">
-              Een toegankelijke CAPTCHA moet op zijn minst beschikbaar zijn
-              als audiofragment welke je met het toetsenbord kan bereiken.
-            </p>
-          </div>
-          <div class="card-tips">
-            <h4 class="card-extra-title">Tips</h4>
-            <p class="card-extra-text">
-              Je kunt ook een vernieuwde CAPTCHA of andere controles
-              gebruiken.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Second Card -->
-      <div class="card-wrapper">
-        <!-- Card Content (Checkbox, Title & Description) -->
-        <div class="card-content">
-          <form class="">
-            <input class="checkbox-box" type="checkbox" />
-          </form>
-          <div class="card-inner-content-wrapper">
-            <!-- Checkbox -->
-            <h3 class="card-title">Bewegend beeld/geluid</h3>
-            <p class="card-info">
-              Bewegend beeld en geluid dat automatisch start kan uitgezet worden
-              of stopt binnen 3 seconden.
-            </p>
-            <!-- More info button -->
-            <button class="card-more-info-button">Meer info</button>
-          </div>
-        </div>
-        <!-- Expandable Card Info -->
-        <div class="card-extra-info">
-          <!-- Card description -->
-          <div class="rl-card-uitleg">
-            <!-- Card title -->
-            <!-- <h4 class="card-extra-title">Uitleg</h4> -->
-            <!-- Card extra paragrahp -->
-            <!-- <p class="card-extra-text">
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <!-- <h4 class="card-extra-title">Uitleg</h4> -->
+              <!-- Card extra paragrahp -->
+              <!-- <p class="card-extra-text">
                 Door de teksten eenvoudig te vergroten kunnen mensen met een
                 visuele beperking de inhoud beter waarnemen.
               </p> -->
-          </div>
-          <div class="card-tips">
-            <h4 class="card-extra-title">Tips</h4>
-            <p class="card-extra-text">
-              Beter is om helemaal geen beeld en geluid te gebruiken dat
-              automatisch start.
-            </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Beter is om helemaal geen beeld en geluid te gebruiken dat
+                automatisch start.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Third Card -->
-      <div class="card-wrapper">
-        <!-- Card Content (Checkbox, Title & Description) -->
-        <div class="card-content">
-          <form class="">
-            <input class="checkbox-box" type="checkbox" />
-          </form>
-          <div class="card-inner-content-wrapper">
-            <!-- Checkbox -->
-            <h3 class="card-title">Tijdslimiet</h3>
-            <p class="card-info">
-              Bezoekers hebben geen last van een tijdslimiet bij het invullen
-              van gegevens
-            </p>
-            <!-- More info button -->
-            <button class="card-more-info-button">Meer info</button>
+        <!-- Third Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Tijdslimiet</h3>
+              <p class="card-info">
+                Bezoekers hebben geen last van een tijdslimiet bij het invullen
+                van gegevens
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Sommige bezoekers hebben meer tijd dan gemiddeld nodig om
+                gegevens in te vullen. Bijvoorbeeld omdat zij voorleessoftware
+                gebruiken of dyslectisch zijn. Deze bezoekers moeten de
+                tijdslimiet op kunnen heffen of verlengen.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Zorg ervoor dat de gebruiker de tijdslimiet kan stopzetten,
+                aanpassen of uitbreiden
+              </p>
+            </div>
           </div>
         </div>
-        <!-- Expandable Card Info -->
-        <div class="card-extra-info">
-          <!-- Card description -->
-          <div class="rl-card-uitleg">
-            <!-- Card title -->
-            <h4 class="card-extra-title">Uitleg</h4>
-            <!-- Card extra paragrahp -->
-            <p class="card-extra-text">
-              Sommige bezoekers hebben meer tijd dan gemiddeld nodig om gegevens
-              in te vullen. Bijvoorbeeld omdat zij voorleessoftware gebruiken of
-              dyslectisch zijn. Deze bezoekers moeten de tijdslimiet op kunnen
-              heffen of verlengen.
-            </p>
-          </div>
-          <div class="card-tips">
-            <h4 class="card-extra-title">Tips</h4>
-            <p class="card-extra-text">
-              Zorg ervoor dat de gebruiker de tijdslimiet kan stopzetten,
-              aanpassen of uitbreiden
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <!-- Fourth Card -->
-      <div class="card-wrapper">
-        <!-- Card Content (Checkbox, Title & Description) -->
-        <div class="card-content">
-          <form class="">
-            <input class="checkbox-box" type="checkbox" />
-          </form>
-          <div class="card-inner-content-wrapper">
-            <!-- Checkbox -->
-            <h3 class="card-title">Formulier</h3>
-            <p class="card-info">
-              Bezoekers kunnen zelf fouten voorkomen bij formulieren waarbij
-              belangrijke acties in gang worden gezet door te annuleren,
-              controleren of bevestigen.
-            </p>
-            <!-- More info button -->
-            <button class="card-more-info-button">Meer info</button>
+        <!-- Fourth Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Formulier</h3>
+              <p class="card-info">
+                Bezoekers kunnen zelf fouten voorkomen bij formulieren waarbij
+                belangrijke acties in gang worden gezet door te annuleren,
+                controleren of bevestigen.
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Soms kan het verkeerd invullen van een formulier ingrijpende
+                gevolgen hebben. Door bezoekers de mogelijkheid te bieden een
+                inzending terug te trekken, help je hen grote fouten voorkomen.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Let vooral op bij wettelijke en financiële transacties, hier
+                zijn de gevolgen het grootst.
+              </p>
+            </div>
           </div>
         </div>
-        <!-- Expandable Card Info -->
-        <div class="card-extra-info">
-          <!-- Card description -->
-          <div class="rl-card-uitleg">
-            <!-- Card title -->
-            <h4 class="card-extra-title">Uitleg</h4>
-            <!-- Card extra paragrahp -->
-            <p class="card-extra-text">
-              Soms kan het verkeerd invullen van een formulier ingrijpende
-              gevolgen hebben. Door bezoekers de mogelijkheid te bieden een
-              inzending terug te trekken, help je hen grote fouten voorkomen.
-            </p>
-          </div>
-          <div class="card-tips">
-            <h4 class="card-extra-title">Tips</h4>
-            <p class="card-extra-text">
-              Let vooral op bij wettelijke en financiële transacties, hier zijn
-              de gevolgen het grootst.
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <!-- Fifth Card -->
-      <div class="card-wrapper">
-        <!-- Card Content (Checkbox, Title & Description) -->
-        <div class="card-content">
-          <form class="">
-            <input class="checkbox-box" type="checkbox" />
-          </form>
-          <div class="card-inner-content-wrapper">
-            <!-- Checkbox -->
-            <h3 class="card-title">Bediening formulieren</h3>
-            <p class="card-info">
-              Alle onderdelen van formulieren zijn via het toetsenbord te
-              bereiken en bedienen in logische volgorde.
-            </p>
-            <!-- More info button -->
-            <button class="card-more-info-button">Meer info</button>
+        <!-- Fifth Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Bediening formulieren</h3>
+              <p class="card-info">
+                Alle onderdelen van formulieren zijn via het toetsenbord te
+                bereiken en bedienen in logische volgorde.
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Een formulier wat bruikbaar is d.m.v. het toetsenbord zorgt voor
+                een betere gebruikservaring.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Gebruik een passende styling die bij de vormgeving past en ook
+                nog eens toegankelijk is.
+              </p>
+            </div>
           </div>
         </div>
-        <!-- Expandable Card Info -->
-        <div class="card-extra-info">
-          <!-- Card description -->
-          <div class="rl-card-uitleg">
-            <!-- Card title -->
-            <h4 class="card-extra-title">Uitleg</h4>
-            <!-- Card extra paragrahp -->
-            <p class="card-extra-text">
-              Een formulier wat bruikbaar is d.m.v. het toetsenbord zorgt voor
-              een betere gebruikservaring.
-            </p>
+
+        <!-- Sixth Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Invoer</h3>
+              <p class="card-info">
+                Alle invoervelden hebben een duidelijke instructie.
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
           </div>
-          <div class="card-tips">
-            <h4 class="card-extra-title">Tips</h4>
-            <p class="card-extra-text">
-              Gebruik een passende styling die bij de vormgeving past en ook nog
-              eens toegankelijk is.
-            </p>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Stel jezelf als beheerder de vraag wat je van de gebruiker wilt
+                vragen. Is een invoerveld noodzakelijk? Mogen gebruikers een
+                typefoutje maken?
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Bied namen en alt-tekst aan invoervelden en groepeer bij elkaar
+                horende velden, uiteraard met voldoende tussenruimte.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Sixth Card -->
-      <div class="card-wrapper">
-        <!-- Card Content (Checkbox, Title & Description) -->
-        <div class="card-content">
-          <form class="">
-            <input class="checkbox-box" type="checkbox" />
-          </form>
-          <div class="card-inner-content-wrapper">
-            <!-- Checkbox -->
-            <h3 class="card-title">Invoer</h3>
-            <p class="card-info">
-              Alle invoervelden hebben een duidelijke instructie.
-            </p>
-            <!-- More info button -->
-            <button class="card-more-info-button">Meer info</button>
+      <!-- Section cat 3 -->
+      <section class="card-container">
+        <!------------------>
+        <!-- Discutabel -->
+        <!------------------>
+
+        <!-- Category Title -->
+        <h2>Begrijpelijk</h2>
+        <span class="progress-bar">---------</span>
+        <span class="category-info">
+          Hier bevindt zich info over Begrijpelijk
+        </span>
+
+        <!-- First Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Taalniveau</h3>
+              <p class="card-info">Is de tekst in taalniveau B1 geschreven?</p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Taalniveau B1 staat voor eenvoudig Nederlands. Een tekst op
+                B1-niveau bestaat uit makkelijke woorden en uit korte,
+                eenvoudige en actieve zinnen.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Voor het schrijven van de teksten kan de redactie gebruik maken
+                van een taaltool. Deze tool met het gemiddelde taalniveau van
+                een tekst en geeft aan welke aanpassingen nodig zijn om het
+                gewenste niveau te bereiken.
+              </p>
+            </div>
           </div>
         </div>
-        <!-- Expandable Card Info -->
-        <div class="card-extra-info">
-          <!-- Card description -->
-          <div class="rl-card-uitleg">
-            <!-- Card title -->
-            <h4 class="card-extra-title">Uitleg</h4>
-            <!-- Card extra paragrahp -->
-            <p class="card-extra-text">
-              Stel jezelf als beheerder de vraag wat je van de gebruiker wilt
-              vragen. Is een invoerveld noodzakelijk? Mogen gebruikers een
-              typefoutje maken?
-            </p>
+
+        <!-- Second Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Titel</h3>
+              <p class="card-info">
+                Heeft de pagina een duidelijke titel die de inhoud van de pagina
+                beschrijft?
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
           </div>
-          <div class="card-tips">
-            <h4 class="card-extra-title">Tips</h4>
-            <p class="card-extra-text">
-              Bied namen en alt-tekst aan invoervelden en groepeer bij elkaar
-              horende velden, uiteraard met voldoende tussenruimte.
-            </p>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                De toegankelijkheid van teksten zit hem niet alleen in de
+                structuur. Een toegankelijk tekst is ook begrijpelijk. Die
+                begrijpelijkheid kun je vergroten door duidelijke titels en
+                koppen te gebruiken.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                De titel van een pagina moet duidelijk beschrijven waar de
+                pagina over gaat en (tussen-)kippen moeten het onderwerp of het
+                doel van de paragrafen die erbij horen beschrijven.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Section cat 3 -->
-    <section class="card-container">
-      <!------------------>
-      <!-- Discutabel -->
-      <!------------------>
-
-      <!-- Category Title -->
-      <h2>Begrijpelijk</h2>
-      <span class="progress-bar">---------</span>
-      <span class="category-info">
-        Hier bevindt zich info over Waarneembaar
-      </span>
-
-      <!-- First Card -->
-      <div class="card-wrapper">
-        <!-- Card Content (Checkbox, Title & Description) -->
-        <div class="card-content">
-          <form class="">
-            <input class="checkbox-box" type="checkbox" />
-          </form>
-          <div class="card-inner-content-wrapper">
-            <!-- Checkbox -->
-            <h3 class="card-title">Taalniveau</h3>
-            <p class="card-info">Is de tekst in taalniveau B1 geschreven?</p>
-            <!-- More info button -->
-            <button class="card-more-info-button">Meer info</button>
+        <!-- Third Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Koppen</h3>
+              <p class="card-info">
+                Heeft de tekst duidelijk en beschrijvende koppen en
+                tussenkoppen?
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                De toegankelijkheid van teksten zit hem niet alleen in de
+                structuur. Een toegankelijk tekst is ook begrijpelijk. Die
+                begrijpelijkheid kun je vergroten door duidelijke titels en
+                koppen te gebruiken.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Vermijd grote lappen tekst. Grote lappen tekst zijn erg lastig
+                te lezen voor gebruikers met een autismespectrum stoornis of
+                gebruikers met dyslexie
+              </p>
+            </div>
           </div>
         </div>
-        <!-- Expandable Card Info -->
-        <div class="card-extra-info">
-          <!-- Card description -->
-          <div class="rl-card-uitleg">
-            <!-- Card title -->
-            <h4 class="card-extra-title">Uitleg</h4>
-            <!-- Card extra paragrahp -->
-            <p class="card-extra-text">
-              Taalniveau B1 staat voor eenvoudig Nederlands. Een tekst op
-              B1-niveau bestaat uit makkelijke woorden en uit korte,
-              eenvoudige en actieve zinnen.
-            </p>
+
+        <!-- Fourth Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Beschrijving</h3>
+              <p class="card-info">
+                Voor ingewikkeldere afbeeldingen die informatie bevatten, zoals
+                grafieken of infographics, is een langere beschrijving gemaakt
+                (naast de alt-tekst).
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
           </div>
-          <div class="card-tips">
-            <h4 class="card-extra-title">Tips</h4>
-            <p class="card-extra-text">
-              Voor het schrijven van de teksten kan de redactie gebruik maken
-              van een taaltool. Deze tool met het gemiddelde taalniveau van
-              een tekst en geeft aan welke aanpassingen nodig zijn om het
-              gewenste niveau te bereiken.
-            </p>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                De tekstuele uitleg is niet alleen handig voor gebruikers met
+                visuele beperkingen, maar een tekstuele uitleg is ook gelijk
+                goed voor de vindbaarheid. Google kan de tekst indexeren.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Plaats een bijschrift boven of onder de afbeelding.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- End of section 3 -->
 
-    <!-- Section cat 4 -->
-    <section class="card-container">
-      <!------------------>
-      <!-- Discutabel -->
-      <!------------------>
-
-      <!-- Category Title -->
-      <h2>Robuust</h2>
-      <span class="progress-bar">---------</span>
-      <span class="category-info"> Hier bevindt zich info over Robuust </span>
-
-      <!-- First Card -->
-      <div class="card-wrapper">
-        <!-- Card Content (Checkbox, Title & Description) -->
-        <div class="card-content">
-          <form class="">
-            <input class="checkbox-box" type="checkbox" />
-          </form>
-          <div class="card-inner-content-wrapper">
-            <!-- Checkbox -->
-            <h3 class="card-title">Structuur</h3>
-            <p class="card-info">
-              Is de juiste structuur van de tekst aangegeven via de editor van
-              het CMS of in HTML-codes
-            </p>
-            <!-- More info button -->
-            <button class="card-more-info-button">Meer info</button>
+        <!-- Fifth Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Tekst</h3>
+              <p class="card-info">
+                Tekst is niet als afbeelding geplaatst maar als echte tekst.
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Sommige gebruikers zullen de website bezoeken met behulp van een
+                alleen-tekst browser, of kunnen afbeeldingen hebben
+                uitgeschakeld in een gewone browser. Afbeeldingen van tekst
+                veroorzaken problemen, omdat deze voor gebruikers moeilijker te
+                begrijpen zijn. Afbeeldingen van tekst veroorzaken ook problemen
+                voor gebruikers als ze het formaat van websites willen wijzigen
+                om ze duidelijker te kunnen lezen, omdat afbeeldingen op deze
+                manier niet goed werken. Ze dragen ook bij aan de tijd die nodig
+                is om jouw website te laden, dat is ook vaak een reden waarom
+                gebruikers een website verlaten, een kwestie van ongeduld.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Uitzonderingen voor afbeeldingen van tekst zijn onderworpen aan
+                richtlijnen voor kleur.
+              </p>
+            </div>
           </div>
         </div>
-        <!-- Expandable Card Info -->
-        <div class="card-extra-info">
-          <!-- Card description -->
-          <div class="rl-card-uitleg">
-            <!-- Card title -->
-            <h4 class="card-extra-title">Uitleg</h4>
-            <!-- Card extra paragrahp -->
-            <p class="card-extra-text">
-              Als een website “onder water” goed in elkaar zit, dan is de
-              basis voor toegankelijkheid gelegd. Ontwikkelaars kunnen in de
-              technische standaard WCAG 2.1 meer lezen over technieken die
-              gebruikt kunnen worden om aan de toegankelijkheidseisen te
-              voldoen.
-            </p>
+
+        <!-- Sixth Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Tabellen</h3>
+              <p class="card-info">
+                Tabellen hebben een bijschrift of samenvatting.
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
           </div>
-          <div class="card-tips">
-            <h4 class="card-extra-title">Tips</h4>
-            <p class="card-extra-text">
-              Voor het bouwen van websites zijn internationale standaarden
-              ontwikkeld. Door de standaarden te volgen gebruik je de code op
-              de manier waarop deze bedoeld is. Hulptechnologieën sluiten aan
-              bij de ze standaarden.
-            </p>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Een bijschrijft of samenvatting geeft vooraf aan of de
+                informatie in de tabel de moeite waar is om door te nemen.
+                Gebruikers kunnen hun tijd en aandacht spenderen aan andere
+                content op de website.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Om het bijschrift of de samenvatting te verbinden aan de tabel
+                moet je de juiste code gebruiken.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- End of section 4 -->
-  </div>
-  <!-- closing tag of container -->
-</body>
 
+        <!-- Seventh Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Formulier</h3>
+              <p class="card-info">
+                De werking van het formulier is voorspelbaar (bijv. verzenden
+                pas na zelf klikken of informatie daarover).
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <!-- <h4 class="card-extra-title">Uitleg</h4> -->
+              <!-- Card extra paragrahp -->
+              <!-- <p class="card-extra-text">
+
+            </p> -->
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Zorg dat jouw bezoeker op de hoogte is van de wijziging die
+                plaats gaat vinden. Informeren betekent dat je in tekst aangeeft
+                wat er zal gebeuren als er een optie wordt geselecteerd of
+                formulierveld wordt ingevuld. Voorkom ook dat een formulier
+                automatisch wordt verzonden zodra het laatste veld is ingevuld.
+                Maak bijvoorbeeld een verzendknop onder het formulier. Pas als
+                de bezoeker de knop aanklikt, verandert de inhoud van de pagina.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of section 3 -->
+
+      <!-- Section cat 4 -->
+      <section class="card-container">
+        <!------------------>
+        <!-- Discutabel -->
+        <!------------------>
+
+        <!-- Category Title -->
+        <h2>Robuust</h2>
+        <span class="progress-bar">---------</span>
+        <span class="category-info"> Hier bevindt zich info over Robuust </span>
+
+        <!-- First Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Structuur</h3>
+              <p class="card-info">
+                Is de juiste structuur van de tekst aangegeven via de editor van
+                het CMS of in HTML-codes
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Als een website “onder water” goed in elkaar zit, dan is de
+                basis voor toegankelijkheid gelegd. Ontwikkelaars kunnen in de
+                technische standaard WCAG 2.1 meer lezen over technieken die
+                gebruikt kunnen worden om aan de toegankelijkheidseisen te
+                voldoen.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Voor het bouwen van websites zijn internationale standaarden
+                ontwikkeld. Door de standaarden te volgen gebruik je de code op
+                de manier waarop deze bedoeld is. Hulptechnologieën sluiten aan
+                bij de ze standaarden.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Spaties / Tabs</h3>
+              <p class="card-info">
+                Er zijn geen spaties of tabs gebruikt om kolommen, tabellen of
+                speciale teksteffecten te maken.
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Als je wilt dat jouw tekst in kolommen of in een tabel
+                verschijnt, gebruik dan niet de spatiebalk of de tab-toets om
+                dit te doen, omdat dit de tekst onbegrijpelijk maakt voor
+                bezoekers die gebruik maken van assistentietechnologie. Kolommen
+                die op deze manier worden aangemaakt worden rij voor rij
+                gelezen, niet kolom voor kolom.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Tabellen moeten gemaakt worden met de tabelfuncties van de
+                editor in het CMS. Voor kolommen en woorden met letters die
+                verder uit elkaar staan, moet CSS gebruikt worden.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Afbeelding alternatieven</h3>
+              <p class="card-info">
+                Afbeeldingen die informatie overdragen hebben een tekstueel
+                alternatief
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Door afbeeldingen te voorzien van een tekstueel alternatief maak
+                je ze dus toegankelijk voor bezoekers die de afbeeldingen niet
+                kunnen zien. Ook zoekmachines zoals Google maken gebruik van
+                tekstalternatieven bij het indexeren van websites.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Een tekstueel alternatief werkt alleen als de beschrijving
+                adequaat is. In veel gevallen gaat het om ‘vertellen wat je
+                ziet’. Soms gaat het juist om ‘vertellen wat dit doet’,
+                bijvoorbeeld bij een button in een formulier. En als een
+                afbeelding geen informatie toevoegt, is het beter ook geen
+                tekstalternatief te geven. Denk goed na over de tekstuele
+                beschrijving. Iemand die alleen de tekstalternatieven ziet zou
+                de informatie nog steeds moeten kunnen begrijpen en de website
+                nog steeds moeten kunnen gebruiken.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fourth Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Alt teksten</h3>
+              <p class="card-info">
+                Afbeeldingen die als link worden gebruikt, hebben een alt-tekst
+                die het doel van de link beschrijft.
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                De alt-tekst beschrijft het doel of de richting van de
+                afbeelding in plaats van de afbeelding zelf.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Als de afbeelding in een link staat met een tekst erbij, dan is
+                de afbeelding ook niet-informatief en ook dan volstaat een leeg
+                alt-attribuut. De screenreader leest dan de linktekst op. Als de
+                afbeelding aanklikbaar is en in de link staat geen tekst, dan
+                gebruik je wel een alt-tekst en beschrijf je waar de afbeelding
+                naartoe linkt.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fifth Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Decoratieve afbeeldingen</h3>
+              <p class="card-info">
+                Decoratieve afbeeldingen kunnen door hulptechnologieën genegeerd
+                worden.
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Decoratieve afbeeldingen zijn niet relevant voor gebruikers van
+                hulptechnologieën. De decoratieve afbeeldingen mogen de
+                begrijpelijkheid niet beïnvloeden.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Dit kan bijvoorbeeld door de alt-tekst leeg te laten.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sixth Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Tekstuele alternatieven</h3>
+              <p class="card-info">
+                Audio en video hebben een kort tekstueel alternatief dat de
+                inhoud beschrijft.
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Alle vormen van audio en video moeten een kort tekstalternatief
+                krijgen. Dit is vergelijkbaar met de alt-tekst van afbeeldingen.
+                Door deze korte tekst weten bezoekers die hulptechnologie
+                gebruiken, ook als de audio of video zelf niet toegankelijk zou
+                zijn, in ieder geval waar ze mee te maken hebben.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Hoe je dit alternatief plaatst hangt af van de techniek die
+                gebruikt is om het multimediabestand op de webpagina te
+                plaatsen.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seventh Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Transcript</h3>
+              <p class="card-info">
+                Filmpjes, bewegend beeld en audio hebben (indien nodig) een
+                transcript.
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                In het transcript vertel je zo compleet mogelijk het verhaal van
+                het filmpje. Je vertelt wat er gebeurt, dus wat er te zien en te
+                horen is, en wat er gezegd wordt, door wie. Eventuele
+                interactieve elementen neem je ook op in het transcript.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Kun je in het filmpje bijvoorbeeld op een knop drukken, dan neem
+                je in het transcript een link op naar de pagina waar je die
+                actie kunt uitvoeren.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Eighth Card -->
+        <div class="card-wrapper">
+          <!-- Card Content (Checkbox, Title & Description) -->
+          <div class="card-content">
+            <form class="">
+              <input class="checkbox-box" type="checkbox" />
+            </form>
+            <div class="card-inner-content-wrapper">
+              <!-- Checkbox -->
+              <h3 class="card-title">Tabel</h3>
+              <p class="card-info">
+                Informatie die in een tabel hoort, staat ook écht in een tabel
+                en heeft de juiste HTML-code.
+              </p>
+              <!-- More info button -->
+              <button class="card-more-info-button">Meer info</button>
+            </div>
+          </div>
+          <!-- Expandable Card Info -->
+          <div class="card-extra-info">
+            <!-- Card description -->
+            <div class="rl-card-uitleg">
+              <!-- Card title -->
+              <h4 class="card-extra-title">Uitleg</h4>
+              <!-- Card extra paragrahp -->
+              <p class="card-extra-text">
+                Gegevens in de tabel hebben zowel horizontaal als verticaal een
+                relatie met elkaar. Met de juiste HTML-code kun je die relaties
+                expliciet maken. Je geeft dan aan welke cellen koppen zijn en
+                welke cellen gegevens bevatten. Bij complexe tabellen geef je
+                ook nog eens aan welke kop precies bij welke cellen hoort.
+                Bezoekers die hulptechnologie gebruiken hebben hier profijt van.
+                Doordat de relaties in de code staan kan de hulptechnologie de
+                informatie uit de tabel op een overzichtelijke en logische
+                manier presenteren.
+              </p>
+            </div>
+            <div class="card-tips">
+              <h4 class="card-extra-title">Tips</h4>
+              <p class="card-extra-text">
+                Sommige tabellen zitten heel ingewikkeld in elkaar, met meerdere
+                niveaus en koppen. Het kan dan nodig zijn om code toe te voegen
+                aan de tabel om de verbanden duidelijk te maken. Stel jezelf
+                echter de vraag of de tabel niet kan worden vereenvoudigd of
+                gesplitst in meerdere tabellen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of section 4 -->
+    </div>
+    <!-- closing tag of container -->
+  </body>
 </html>
