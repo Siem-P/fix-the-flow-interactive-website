@@ -1,6 +1,6 @@
 :root {
   --test-color: #e4e68e;
-  --card-content-background: #eeeeee;
+  --card-content-background: #606eb3;
   --lightblue: lightblue;
   --lightgreen: lightgreen;
   --magenta: #b9005f;
@@ -32,6 +32,7 @@
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Fira Sans', sans-serif;
 }
+
 
 ul{
   list-style-type: none;

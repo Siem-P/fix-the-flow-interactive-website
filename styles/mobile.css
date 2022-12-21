@@ -6,14 +6,14 @@
   }
 
   /* Header */
-  header #logo{
+  header #logo {
     padding: 0.5em 1.2em;
     width: 14rem;
-}
+  }
 
-#after-curve::before {
+  #after-curve::before {
     left: 13.3em;
-}
+  }
 
   .topnav form {
     display: flex;
@@ -33,7 +33,7 @@
 
   .menu-label {
     color: black;
-    font-size: .8rem;
+    font-size: 0.8rem;
     position: absolute;
     top: 0;
     right: 0;
@@ -42,7 +42,7 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-}
+  }
 
   .primaire-nav {
     display: none;
@@ -68,12 +68,10 @@
     font-weight: 600;
   }
 
-
   .zero-state .hero-buttons {
     display: flex;
     margin-top: 1rem;
     column-gap: 1rem;
-    
   }
 
   .call-to-action {
@@ -100,7 +98,8 @@
     gap: 1.5rem;
   }
 
-  .homepage-info, .homepage-info > article{
+  .homepage-info,
+  .homepage-info > article {
     display: flex;
     flex-direction: column;
   }
@@ -116,14 +115,14 @@
 
   .homepage-info p {
     max-width: 30rem;
-    
+
     /* padding: 1em; */
   }
-
 
   /* Checklist */
 
   .category-container {
+    overflow-y: hidden;
     display: flex;
     background-color: var(--test-color);
     min-height: 30em;
@@ -137,7 +136,7 @@
     gap: 1em;
   }
 
-  section:nth-of-type(1) {
+  /* section:nth-of-type(1) {
     background-color: var(--blauw);
   }
   section:nth-of-type(2) {
@@ -148,15 +147,18 @@
   }
   section:nth-of-type(4) {
     background-color: var(--lightgreen);
-  }
+  } */
 
   .card-container {
+    background-color: #fff;
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
     flex: 0 0 100vw;
     /* min-width: calc(100vw - 1rem - 1rem); */
     padding: 1rem 1rem;
+    height: fit-content;
+    
   }
 
   .swipe-indicator {
@@ -169,14 +171,13 @@
     left: 0;
     right: 0;
   }
-  
-  
+
   .swipe-indicator-item {
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
     background-color: #ccc;
-    margin: 1rem 0.25rem; 
+    margin: 1rem 0.25rem;
   }
 
   .indicator-active {
@@ -184,9 +185,6 @@
     transition: 0.2s ease;
     transform: scale(1.5);
   }
-
-
-  
 
   .progress-bar {
     margin: 0 auto;
