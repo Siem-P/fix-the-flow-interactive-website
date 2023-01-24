@@ -20,9 +20,11 @@ De user stories die behandeld zijn in mijn project:
 
 > #15 Als bezoeker van de tool wil ik contactinformatie kunnen achterhalen over wie de eigenaar/maker van deze tool is.
 
+> #17 Als gebruiker wil ik een soort interactieve checklist kunnen bijhouden over de wettelijke toegankelijkheidsrichtlijnen voor mijn eigen website.
+
 <!-- Voeg een mooie poster visual toe 📸 -->
 ### Preview - Website
-<img src="https://user-images.githubusercontent.com/64197688/195725764-c18e2949-f526-4fac-8aac-25086785145f.png">
+<img src="https://user-images.githubusercontent.com/64197688/214432517-be03f47c-e214-4eca-8d48-6c2ce55263cc.png">
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
 ## Live website 
@@ -41,40 +43,37 @@ Met daarin een `<main>` `<section>` `<nav>` & `<article>`.
 ### CSS
 Vormgeving en media queries zijn een belangrijk onderdeel van de website. Volgens mijn analyse is het noodzakelijk dat ik de huisstijl van *Vervoerregio Amsterdam* volg. Zie bronnen voor de link naar de huisttijl (pdf).
 
-Media queries is een erg belangrijk onderdeel van de website. (Dit is nog niet af)
-Tijdens de analyse en ontwerpfase heb ik ondervonden dat de onderstaande mediaqueries belangrijk zijn voor het gebruik van de website.
-```
-@media (min-width: 1024px) {} - Desktop
-@media (min-width: 768px) and (max-width: 1023px) {} - Tablet/iPad
-@media (min-width: 320px) and (max-width: 767px) {} - Mobile
-```
-Responsiveness is nog niet af!
-
 ### JavaScript
-Voor het bouwen van de eerste user story was er een belangrijk stuk JavaScript nodig. 
-Dit had ik op meerdere manieren kunnen doen, maar ik heb gekozen om het met `data-id`'s te doen.
+Voor deze interactie heb ik onder andere gewerkt met de `IntersectionObserver` en dat was erg uitdagend om te doen.
 
 ```
-const navButtons = document.querySelectorAll(".nav-button");
-const cardsContent = document.querySelectorAll(".card-heading");
-
-console.log(navButtons.length);
-console.log(cardsContent.length);
-
-navButtons.forEach((item) => {
-  item.addEventListener("click", () => {
-    const id = item.dataset.id;
-    const active = document.getElementById(id);
-
-    cardsContent.forEach((content) => content.classList.add("hide-show"));
-    active.classList.remove("hide-show");
+// Observer check if element enter the viewport, and 
+// then add the active class to the element in view
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.intersectionRatio > 0) {
+        // Update the indicator elements
+        indicators.forEach((indicator, index) => {
+          if (entry.target === items[index]) {
+            indicator.classList.add('indicator-active');
+          } else {
+            indicator.classList.remove('indicator-active');	
+          }
+        });
+      }
+    });
   });
-});
+
 ```
 
-In de HTML wordt hier een kopje wel of niet laten zien, door middel van de `data-id`.
+In de HTML heb ik een indicator gemaakt die de gebruiker feedback geeft. De feedback is in dit geval de slide waar de gebruiker zich bevindt.
 ```
-<li ><button class="nav-button" data-id="card1_0">Waarneembaar</button></li>
+<div class="swipe-indicator">
+    <span class="swipe-indicator-item"></span>
+    <span class="swipe-indicator-item"></span>
+    <span class="swipe-indicator-item"></span>
+    <span class="swipe-indicator-item"></span>
+</div>
 ```
 
 ## Bronnen
